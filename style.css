@@ -58,6 +58,10 @@ body {
     border:none;
     transition: background-color 300ms, color 300ms;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .333em;
  }
 
 
@@ -85,10 +89,9 @@ body {
 
 
 .header {
-    padding: 2.5em 6.4%;
+    padding: 2.5em 6.4% 10.375em;
     background: url(./assets/bg-main-mobile.png);
     background-position: bottom left;
-    margin-bottom: 10.375em;
 }
 
 .header_logo{ 
@@ -144,7 +147,6 @@ body {
     padding: 4em 6.4% 5em;
 }
 
-
 .social {
     display: flex;
     align-items: center;
@@ -152,3 +154,97 @@ body {
     padding-left: 0;
     gap: 1.25em;
 }
+
+.social_icon {
+    cursor: pointer;
+}
+
+.social_icon path
+{
+    transition: fill 300ms;
+}
+
+.social_icon:hover path {
+    fill: var(--color-2)
+}
+
+@media (min-width: 768px)
+{
+    body {
+        padding: 0 5%;
+    }
+    .heading-1
+    {
+        font-size: 4rem;
+        line-height: 1em;
+    }
+
+    .heading-2 
+    {
+        font-size: 2rem;
+        line-height: 1.25em;
+    }
+
+    .body-2 
+    {
+        font-size: 1.125rem;
+        line-height: 1.55em;
+    }
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+        background: url(./assets/bg-main-tablet.png), url(./assets/bg-pattern-1.svg);
+        background-position: top 30% right, top right;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto, auto;
+    }
+
+    .hero {
+        max-width: 520px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_img {
+        width: 35%;
+        transform: translateY(-23%);
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        left: 7%;
+    }
+
+    .main_content {
+        position: relative;
+        max-width: 400px;
+        right: 7%;
+        top: 9em;
+    }
+
+
+    .footer {
+        padding: 11.6em 0% 5.31em;
+        display: grid;
+        grid-template-columns: minmax(auto, 366px) auto;
+        grid-template-rows: auto auto;
+    }
+
+    .footer_logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .footer_body {
+        grid-column: 1 / 2;
+        grid-row: 2 / -1;
+    }
+
+    .social {
+        justify-self: end;
+        grid-column: 2 / -1;
+        grid-row:  1 / -1;
+    }
+    
