@@ -84,3 +84,71 @@ body {
  }
 
 
+.header {
+    padding: 2.5em 6.4%;
+    background: url(./assets/bg-main-mobile.png);
+    background-position: bottom left;
+    margin-bottom: 10.375em;
+}
+
+.header_logo{ 
+    margin-bottom: 4em;
+}
+
+.main {
+    background-color: var(--color-5);
+    background-image: url(./assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 8px;
+}
+
+.main_img {
+    display: block;
+    width: 55.4%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 312px;
+    transform: translateY(-30%);
+}
+
+.main_content 
+{
+    color: var(--color-4);
+    background-color: var(--color-2);
+    border-radius: 8px;
+    padding: 3em 9.6% 3.25em;
+}
+
+
+.main_price
+ {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+ }
+.main_price span {
+    font-size: 4.06rem;
+    font-weight: bold;
+}
+
+.main_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .75em;
+    max-width: 333px;
+}
+
+.footer {
+    padding: 4em 6.4% 5em;
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    gap: 1.25em;
+}
