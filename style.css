@@ -1,0 +1,86 @@
+:root 
+{
+    --color-1: hsl(177, 68%, 64%);
+    --color-2: hsl(12,94%,65%);
+    --color-3: hsl(33,100%,70%);
+    --color-4: hsl(20, 33%, 98%);
+    --color-5: hsl(244, 23%, 12%);
+
+    --font-1: "IBM Plex Sans", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--font-1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
+
+.heading-1 {
+    font-size: 2.5rem;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.heading-2 {
+    font-size: 2rem;
+    line-height: 1.25em;
+    font-weight: bold;
+}
+
+.body-1
+ {
+    font-size: 1.125rem;
+    line-height: 1.55em;
+ }
+
+ .body-2 
+ {
+    font-size: 1rem;
+    line-height: 1.625em;
+ }
+
+
+ .btn {
+    padding: .83em 3.16em;
+    border-radius: 8px;
+    border:none;
+    transition: background-color 300ms, color 300ms;
+    cursor: pointer;
+ }
+
+
+ .btn-1 
+ {
+    background-color: var(--color-5);
+    color: var(--color-4);
+ }
+
+.btn-1:hover 
+{
+    background-color: var(--color-1);
+}
+
+ .btn-2 
+ {
+    background-color: var(--color-4);
+    color: var(--color-5);
+ }
+
+ .btn-2:hover 
+ {
+    background-color: var(--color-3);
+ }
+
+
